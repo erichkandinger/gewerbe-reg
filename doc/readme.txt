@@ -22,19 +22,16 @@ Typescript Typings für React-Router-Dom in dev-dependencies hinzufügen
   "@types/react-router-dom"
 
 
-React Query mit Axios installieren
+Tanstack React Query installieren
   npm install react-query axios  (Fehler??)
   
 Package.json
 	dependencies
-	"react-query": "^3.39.3",
-    "axios": "^1.10.0"
+	"@tanstack/react-query": "^5.81.5",
+  "@tanstack/react-query-devtools": "^5.81.5"
 	
-	dev-dependencies
-	"@types/react-query": "1.2.9",
-    "axios": "1.10.0",
-	
-	
+Tanstack React-Query bietet mehr Funktionalität (zB. Caching) gegenüber den neuen React 19 
+Hooks (useActionState)
 
 
 
