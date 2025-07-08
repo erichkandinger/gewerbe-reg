@@ -34,4 +34,12 @@ Tanstack React-Query bietet mehr Funktionalität (zB. Caching) gegenüber den ne
 Hooks (useActionState)
 
 
+Hash Router mit ein paar Testseiten eingerichtet
+
+
+KoliBri Public UI
+npm i @public-ui/components @public-ui/themes @public-ui/react
+
+
+
 
