@@ -1,4 +1,4 @@
-import Header from './components/Header';
+import AppHeader from './components/AppHeader';
 import {Routes, Link, HashRouter as Router, Route } from "react-router-dom";
 import Gewerbe from './components/Gewerbe';
 import GewerbeList from './components/GewerbeList';
@@ -10,11 +10,8 @@ import './App.css';
 function App() {
   return (
     <section className="App">
-      <Header/>
       <Router>
-          <Link to="/">Liste</Link>&nbsp;
-          <Link to="/gewerbe">Gewerbe</Link>&nbsp;
-          <Link to="/example">Example</Link>
+          <AppHeader/>
           <Routes>
             <Route path="/" Component={GewerbeList} />
             <Route path="/gewerbe" Component={Gewerbe} />
