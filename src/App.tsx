@@ -1,11 +1,9 @@
 import AppHeader from './components/AppHeader';
-import {Routes, Link, HashRouter as Router, Route } from "react-router-dom";
+import {HashRouter as Router, Routes, Route } from "react-router-dom";
 import Gewerbe from './components/Gewerbe';
 import GewerbeList from './components/GewerbeList';
 import Example from './components/Example';
 import './App.css';
-
-
 
 function App() {
   return (

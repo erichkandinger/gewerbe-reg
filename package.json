@@ -13,6 +13,7 @@
     "@public-ui/components": "^3.0.1",
     "@public-ui/react": "^3.0.1",
     "@public-ui/themes": "^3.0.1",
+    "@public-ui/theme-default": "3.0.1",
     "@tanstack/react-query": "5.81.5",
     "@tanstack/react-query-devtools": "5.81.5",
     "react": "^19.1.0",

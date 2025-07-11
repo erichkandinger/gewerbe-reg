@@ -4,7 +4,7 @@ import {Routes, Link, HashRouter as Router, Route } from "react-router-dom";
 import { LINKS, LINKS_WITHOUT_SUBMENU } from './MainNav';
 
 function AppHeader() {
-  const [hasIconsWhenExpanded, setHasIconsWhenExpanded] = useState(false);
+//   const [hasIconsWhenExpanded, setHasIconsWhenExpanded] = useState(false);
 
   return (
     <header className="App-header">

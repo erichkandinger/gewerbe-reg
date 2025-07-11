@@ -1,19 +1,15 @@
-/* body {
-  min-height: auto;
-}
- */
+
 .App {
 	text-align: center;
 }
 
 .App-header {
-	background-color: #282c34;
-  width: 100%;
+	background-color: #f4f5f7;
+  	width: 100%;
 	min-height: 30px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	/* font-size: calc(10px + 2vmin); */
 	color: rgb(255, 255, 255);
 }
