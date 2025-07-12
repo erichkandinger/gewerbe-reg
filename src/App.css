@@ -3,13 +3,7 @@
 	text-align: center;
 }
 
-.App-header {
+.app-header {
 	background-color: #f4f5f7;
-  	width: 100%;
 	min-height: 30px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	color: rgb(255, 255, 255);
 }

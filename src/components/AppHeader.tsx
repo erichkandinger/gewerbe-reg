@@ -5,21 +5,21 @@ import { LINKS, LINKS_WITHOUT_SUBMENU } from './MainNav';
 
 function AppHeader() {
 //   const [hasIconsWhenExpanded, setHasIconsWhenExpanded] = useState(false);
-
   return (
-    <header className="App-header">
-		<p>Hello Vite + React + KoliBri!</p>
-		<p className="flex gap-4">
-			<KolButton
-				_label="Primary"
-				_on={{
-					onClick: () => {
-						console.log('Clicked primary');
-					},
-				}}
-				_variant="primary"
-			/>
-			<KolButton
+    <header className='app-header'>
+		<div className='d-grid horizontal gap-4'>
+			<div className='d-flex'>Hello Vite + React + KoliBri!</div>
+			<div className='d-flex flex-warp gap-2'>
+				<KolButton
+					_label="Primary"
+					_on={{
+						onClick: () => {
+							console.log('Clicked primary');
+						},
+					}}
+					_variant="primary"
+				/>
+				<KolButton
 				_label="Secondary"
 				_on={{
 					onClick: () => {
@@ -39,12 +39,13 @@ function AppHeader() {
 				}}
 				_variant="danger"
 			/>
-		</p>
-		<p className="flex gap-4">
-			<Link to="/">Liste</Link>
-			<Link to="/gewerbe">Gewerbe</Link>
-			<Link to="/example">Example</Link>
-		</p>
+			</div>
+			<div className='d-flex gap-2'>
+				<Link to="/">Liste</Link>
+				<Link to="/gewerbe">Gewerbe</Link>
+				<Link to="/example">Example</Link>
+			</div>
+		</div>
 	</header>
   )
 }
