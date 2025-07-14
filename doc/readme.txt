@@ -41,5 +41,11 @@ KoliBri Public UI
 npm i @public-ui/components @public-ui/themes @public-ui/react
 
 
+Bootstrap hinzufügen
+npm i bootstrap
+und css importieren
+import 'bootstrap/dist/css/bootstrap.css';
+
+
 
 
