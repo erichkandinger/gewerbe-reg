@@ -1,52 +1,26 @@
-import { useState } from 'react'
-import { KolSpin, KolNav, KolButton } from '@public-ui/react';
-import {Routes, Link, HashRouter as Router, Route } from "react-router-dom";
-import { LINKS, LINKS_WITHOUT_SUBMENU } from './MainNav';
+
+import {KolLink, KolAvatar, KolImage } from '@public-ui/react';
+
 
 function AppHeader() {
-//   const [hasIconsWhenExpanded, setHasIconsWhenExpanded] = useState(false);
   return (
-    <header className='app-header'>
-		<div className='d-grid horizontal gap-4'>
-			<div className='d-flex'>Hello Vite + React + KoliBri!</div>
-			<div className='d-flex flex-warp gap-2'>
-				<KolButton
-					_label="Primary"
-					_on={{
-						onClick: () => {
-							console.log('Clicked primary');
-						},
-					}}
-					_variant="primary"
-				/>
-				<KolButton
-				_label="Secondary"
-				_on={{
-					onClick: () => {
-						console.log('Clicked secondary');
-					},
-				}}
-				_variant="secondary"
-			/>
-			<KolButton
-				_hideLabel
-				_label="Danger"
-				_icons="codicon codicon-trash"
-				_on={{
-					onClick: () => {
-						console.log('Clicked danger');
-					},
-				}}
-				_variant="danger"
-			/>
-			</div>
-			<div className='d-flex gap-2'>
-				<Link to="/">Liste</Link>
-				<Link to="/gewerbe">Gewerbe</Link>
-				<Link to="/example">Example</Link>
-			</div>
+		/* <header className='app-header'> */
+		<div className="container">
+			<header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"> 
+				<div className="d-flex"> 
+					<KolImage className="m-2" _src='vite.svg' _alt='Logo' /> 
+					<h4 className='m-2'>Gewerbeanwendungen</h4>
+				</div> 
+				<div className='d-flex'>
+					<KolLink className="m-2" _href="#/" _icons={'codicon codicon-home'} _label='Liste' />
+					<KolLink className="m-2" _href="#/gewerbe" _icons={'codicon codicon-home'} _label='Gewerbe' />
+					<KolLink className="m-2" _href="#/example" _icons={'codicon codicon-home'} _label='Example' />
+				</div>
+				<div className="d-flex text-end"> 
+					<KolAvatar _label='Erich Kandinger' className='xs' />
+				</div> 
+			</header>
 		</div>
-	</header>
   )
 }
 
