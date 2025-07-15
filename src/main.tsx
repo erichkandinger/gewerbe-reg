@@ -1,8 +1,10 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './main.css';
-// CSS nur für Bootstrap-Layout - keine Komponenten
-import 'bootstrap/dist/css/bootstrap.css';
+// Bootstrap 5
+import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/js/bootstrap.min.js'
+
 import App from './App.tsx';
 
 // KoliBri Public UI integrieren
