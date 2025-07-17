@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 const queryClient = new QueryClient();
 
-function Example() {
+function XYZRegister() {
     return (
         <div>
             <QueryClientProvider client={queryClient}>
@@ -58,4 +58,4 @@ function TanstackServiceCall() {
   )
 }
 
-export default Example
+export default XYZRegister

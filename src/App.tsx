@@ -1,8 +1,9 @@
 import AppHeader from './components/AppHeader';
+import AppFooter from './components/AppFooter';
 import {HashRouter as Router, Routes, Route } from "react-router-dom";
-import Gewerbe from './components/Gewerbe';
-import GewerbeList from './components/GewerbeList';
-import Example from './components/Example';
+import ABCRegister from './components/ABCRegister';
+import Gewerberegister from './components/Gewerberegister';
+import XYZRegister from './components/XYZRegister';
 import './App.css';
 
 function App() {
@@ -11,10 +12,11 @@ function App() {
       <Router>
           <AppHeader/>
           <Routes>
-            <Route path="/" Component={GewerbeList} />
-            <Route path="/gewerbe" Component={Gewerbe} />
-            <Route path="/example" Component={Example} />
+            <Route path="/" Component={Gewerberegister} />
+            <Route path="/abc" Component={ABCRegister} />
+            <Route path="/xyz" Component={XYZRegister} />
           </Routes>
+          <AppFooter />
       </Router>
     </section>
   )
